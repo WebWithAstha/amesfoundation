@@ -365,7 +365,7 @@ body {
 #prt2 .img {
     position: relative;
     overflow: hidden;
-    height: max-content;
+    height: 0;
     flex-shrink: 0;
 }
 
@@ -376,7 +376,6 @@ body {
 
 #prt2 .img1 {
     width: 29vw;
-    height: max-content;
     rotate: 2deg;
     align-self: start;
     z-index: 2;
@@ -387,7 +386,6 @@ body {
     margin-bottom: 2vw;
     margin-top: 17vw;
     width: 40vw;
-    height: max-content;
     margin-left: -6.5vw;
     rotate: 1deg;
     z-index: 3;
@@ -397,7 +395,6 @@ body {
     align-self: start;
     margin-left: -5vw;
     width: 17vw;
-    height: max-content;
     margin-top: 2vw;
     z-index: 5;
 }
@@ -405,7 +402,6 @@ body {
 #prt2 .img4 {
     align-self: flex-start;
     margin-top: 4vw;
-    height: max-content;
     margin-left: -5vw;
     width: 60vw;
     rotate: -1.5deg;
@@ -1336,6 +1332,7 @@ body {
     #page3 {
         width: 100vw;
         height: max-content;
+        min-height: 200vh;
         flex-direction: column;
     }
 
@@ -1360,9 +1357,11 @@ body {
 
     #prt2 .img {
         /* box-shadow: 1px 1px 10px; */
-        overflow: hidden;
+        overflow: visible;
         height: max-content;
+        min-height: 40vh;
         flex-shrink: 0;
+        transform-origin: top;
     }
 
     #prt2 .img1 {
@@ -1394,6 +1393,7 @@ body {
         margin-top: -7vw;
         margin-left: 0vw;
         width: 80vw;
+        min-height: 60vh;
         margin-right: 3vw;
     }
 
@@ -1445,6 +1445,7 @@ body {
         margin-left: 0vw;
         margin-top: -5vw;
         width: 64vw;
+        min-height: 50vh;
     }
 
     #prt2 .imgd {
@@ -1454,11 +1455,15 @@ body {
     #prt2 .img8 {
         margin-left: 0vw;
         width: 46vw;
+        min-height: 40vh;
+
     }
 
     #prt2 .img9 {
         align-self: flex-end;
         width: 67vw;
+        min-height: 40vh;
+
         margin-top: -4vw;
         margin-left: -10.5vw;
     }
@@ -1466,6 +1471,8 @@ body {
     #prt2 .img10 {
         margin-left: -1.6vw;
         width: 28vw;
+        min-height: 40vh;
+
         margin-top: -10vw;
     }
 
@@ -1798,7 +1805,9 @@ body {
     width: 4vw;
 }
 
-
+.pin-spacer{
+    display: none !important;
+}
 
 
 }
